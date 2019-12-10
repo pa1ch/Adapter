@@ -1,6 +1,14 @@
-﻿namespace Example_04.Homework.Clients
+﻿using Adapter.Homework.Models;
+
+namespace Adapter.Homework.Clients
 {
-    public interface IOrmAdapter // ITarget
+    public interface IOrmAdapter// ITarget
     {
+        DbUserEntity GetUserBy(int userId);
+        DbUserInfoEntity GetUserInfoBy(int infoId);
+
+        void CreateUser(DbUserEntity userEntity, DbUserInfoEntity userInfoEntity);
+
+        void RemoveUserById(int userId);
     }
 }

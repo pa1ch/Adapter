@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Example_04.Homework.Models;
+using Adapter.Homework.Models;
 
-namespace Example_04.Homework.SecondOrmLibrary
+namespace Adapter.Homework.SecondOrmLibrary
 {
     public interface ISecondOrm
     {
